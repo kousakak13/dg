@@ -1,0 +1,357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9L20ol0Zti4zBsrTGCQwjwZdj1BddgHQ&callback=initialize" async defer></script>
+
+    <title>DEFINITION GYM</title>
+    <meta name="description" content="DEFINITION GYM" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content=DEFINITION GYM/>
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="DEFINITION GYM" />
+    <meta property="og:description" content="DEFINITION GYM" />
+    <meta name="robots" content="noarchive">
+
+    <!--styles-->
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/menu.css" media="screen">
+    <!--lib-->
+    <script src="lib/smooth-scroll.min.js"></script>
+    <script type="text/javascript" src="lib/vegas.min.js"></script>
+    <link rel="stylesheet" href="lib/remodal/remodal.css">
+    <link rel="stylesheet" href="lib/remodal/remodal-default-theme.css">
+    <script src="lib/remodal/remodal.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/vegas.min.css" media="all" />
+
+    <script>
+    $(function(){
+      var menu = $('#slide_menu'),
+      menuBtn = $('#button'),
+      bodyer = $('#wrapper'),
+      menuWidth = menu.outerWidth();
+
+      $('.menu-trigger').click(function(){
+        $('.menu-trigger').toggleClass('active');
+        bodyer.toggleClass('open');
+        if(bodyer.hasClass('open')){
+            bodyer.animate({'left' : menuWidth }, 150);
+            menu.animate({'left' :  0 }, 150);
+            console.log(menuWidth);
+        } else {
+            bodyer.animate({'left' : -menuWidth }, 150);
+            menu.animate({'left' : -menuWidth }, 150);
+        }
+      });
+      $('#slide_menu #ht').click(function(){
+        $('.menu-trigger').toggleClass('active');
+        bodyer.toggleClass('open');
+        if(bodyer.hasClass('open')){
+            bodyer.animate({'left' : menuWidth }, 150);
+            menu.animate({'left' :  0 }, 150);
+        } else {
+            bodyer.animate({'left' : -menuWidth }, 150);
+            menu.animate({'left' : -menuWidth }, 150);
+        }
+      });
+    });
+    </script>
+
+    <script>
+    $(function() {
+      $("#wrapper #menuwrap #menu #ht .ss").bind("webkitAnimationEnd mozAnimationEnd animationEnd", function(){
+        $(this).removeClass("hoverd")
+      })
+    })
+    $(function(){
+      $("#wrapper #menuwrap #menu #ht .ss").hover(function(){
+        $(this).addClass("hoverd");
+      })
+    })
+    </script>
+    <script>
+    $(function() {
+      $('body').vegas({
+        overlay: true,
+        slides: [
+            { src: 'images/gal/1.jpg' },
+            { src: 'images/gal/2.jpg' },
+            { src: 'images/gal/3.jpg' },
+            { src: 'images/gal/4.jpg' },
+        ]
+      });
+    });
+    $(document).ready(function () {
+      wsize = $(window).width();
+      hsize = $(window).height();
+      $("#fake").css("height", hsize + "px");
+
+      if( wsize > 756){
+
+      }
+    });
+    $(window).resize(function () {
+      wsize = $(window).width();
+      hsize = $(window).height();
+      $("#fake").css("height", hsize + "px");
+
+      if(wsize > 756){
+      }
+    });
+    </script>
+    <script>
+    jQuery('head').append('<style type="text/css">#main{display:none;}</style>');
+    jQuery( function( $ ) {
+    var timer = 1000;
+    var timer2 = 2000;
+    $('body').append('<div id="js_fade"></div>');
+    $(window).ready(function() {
+        // ページロード時にフェードイン
+        $('#main').css({display: 'block'});
+        setTimeout( function() {
+            $('#js_fade').fadeOut(timer);
+        }, 800 );
+
+        $(".txt").hide();
+        setTimeout( function() {
+            $('.txt').fadeIn(timer2);
+        }, 1600 );
+    });
+    $("a[target!='_blank']").click( function() {
+        var href = $(this).attr('href');
+        if ( href.match(/#/) || href.indexOf('javascript') == 0 ) return;
+        $('#js_fade').fadeIn( timer, function() {
+            location.href = href;
+        });
+        return false;
+    });
+    });
+    </script>
+  </head>
+
+  <body onload="initialize();">
+    <div id="wrapper">
+      <div id ="menuwrap">
+        <ul id = "menu">
+          <div id = "ht" ><li class="ss"><a href="#concept" data-scroll>CONCEPT</a></li></div>
+          <div id = "ht" ><li class="ss"><a href="#trainers" data-scroll>TRAINERS</a></li></div>
+          <div id = "ht" ><li class="ss"><a href="#facilitysm" data-scroll>FACILITY</a></li></div>
+          <div id = "ht" ><li class="ss"><a href="#pricesm" data-scroll>PRICE</a></li></div>
+          <div id = "ht" ><li class="ss"><a href="#access" data-scroll>ACCESS</a></li></div>
+          <div id = "ht" ><li class="ss"><a href="#contactt" data-scroll>CONTACT</a></li></div>
+        </ul>
+        <div id = "menubtm">
+          <p id = "lang">
+            <a href="jp.html">JP</a> <a>/</a> <a class="not">EN</a>
+          </p>
+          <p id = "sns">
+            <a href="https://twitter.com/" class ="icon" target="_blank"><img src="./images/twitter.svg" alt="TWITTER"></a>
+            <a href="https://www.facebook.com/defgym/" class ="icon" target="_blank"><img src="./images/facebook.svg" alt="FACEBOOK"></a>
+            <a href="https://www.instagram.com/definition_gym/" class ="icon" target="_blank"><img src="./images/instagram.svg" alt="INSTAGRAM"></a>
+          </p>
+          <a href="#" class ="logo" ><img src="./images/logo2.svg" alt="INSTAGRAM"></a>
+        </div>
+      </div>
+      <div class="totop"><a href="#" data-scroll><img src="./images/arrow.svg" alt="TWITTER"></a></div>
+
+      <div id ="slide_menu">
+        <ul id = "menu">
+          <div id = "ht" ><li class="ss"><a  href="#concept" data-scroll>CONCEPT</a></li></div>
+          <div id = "ht" ><li class="ss"><a  href="#trainers" data-scroll>TRAINERS</a></li></div>
+          <div id = "ht" ><li class="ss"><a  href="#facilitysm" data-scroll>FACILITY</a></li></div>
+          <div id = "ht" ><li class="ss"><a  href="#pricesm" data-scroll>PRICE</a></li></div>
+          <div id = "ht" ><li class="ss"><a  href="#access" data-scroll>ACCESS</a></li></div>
+          <div id = "ht" ><li class="ss"><a  href="#contactt" data-scroll>CONTACT</a></li></div>
+        </ul>
+        <div id = "menubtm">
+          <a href="jp.html">JP</a> <a>/</a> <a class="not">EN</a>
+          <p id = "sns">
+            <a href="https://twitter.com/" class ="icon" target="_blank"><img src="./images/twitter.svg" alt="TWITTER"></a>
+            <a href="https://facebook.com/" class ="icon" target="_blank"><img src="./images/facebook.svg" alt="FACEBOOK"></a>
+            <a href="https://instagram.com/" class ="icon" target="_blank"><img src="./images/instagram.svg" alt="INSTAGRAM"></a>
+          </p>
+          <a href="#" class ="logo" ><img src="./images/logo2.svg" alt="INSTAGRAM"></a>
+        </div>
+      </div>
+      <a class="menu-trigger" href="javascript:void(0);">
+	      <span></span>
+	      <span></span>
+	      <span></span>
+      </a>
+
+      <div id = "main">
+        <div id = "welcomewrap">
+        <div id = "welcome">
+          <div class = "txt">
+          <a>Welcome to DEFINITION GYM</a>
+          <img src="images/downarrow.svg">
+        </div>
+        </div>
+        </div>
+
+        <div id = "fake"></div>
+
+        <span id = "concept"></span>
+          <div id = "concep">
+            <div class = "txt">
+            <a>
+              DEFINITION GYM is not a private gym which only targets strength improvement or weight loss.<br><br>
+              To get focused on you work,<br>
+              To make your leisure time fuller,<br>
+              To enjoy your meals more,<br>
+              DEFINITION GYM seeks to assist you in achieving the lifestyle you love by working out and<br> adjusting your life rhythm.<br>
+
+              Busy working？ <br>I want you to come.<br>
+              Have no time？ <br> I want you to take action.<br>
+              We're sure you'll be able to schedule suitable and unique sessions only for you with vastly <br>experienced trainers,
+              regardless of whether you're a man or a woman, beginner or experienced.
+<br><br>
+              Start training with DEFINITION GYM to shape who you are!
+<br><br>
+              Better your body,better your life.<br>
+              DEFINITION GYM
+            </a>
+          </div>
+          </div>
+
+        <span id = "trainers"></span>
+        <div id = "trainer">
+          <div class="head"><a class="title">TRAINER</a></div>
+          <div class ="photo1">
+            <img data-remodal-target="profile1" src="images/photos/tr1.jpg">
+            <img data-remodal-target="profile2" src="images/photos/tr2.jpg">
+          </div>
+        </div>
+        <div class="remodal" data-remodal-id="profile1" data-remodal-options="hashTracking:true" padding-top="140px">
+          <div class="profile">
+            <a class="name">〇〇〇 〇〇</a>
+            <img src="images/photos/tr1.jpg">
+            <a class="history">History</a>
+            <a class="history">history of trainers</a>
+          </div>
+        </div>
+        <div class="remodal" data-remodal-id="profile2" data-remodal-options="hashTracking:true" padding-top="140px">
+          <div class="profile">
+            <a class="name">〇〇〇 〇〇</a>
+            <img src="images/photos/tr2.jpg">
+            <a class="history">History</a>
+            <a class="history">history of trainers</a>
+          </div>
+        </div>
+
+        <span id = "facilitysm"></span>
+        <div id = "facility">
+        <div class="head">  <a class="title">FACILITY</a></div>
+            <img src="images/photos/fac-1.jpg">
+            <img src="images/photos/fac-2.jpg">
+            <img src="images/photos/fac-3.jpg">
+        </div>
+
+        <span id = "pricesm"></span>
+        <div id = "price">
+          <div class="head"><a class="title">PRICES</a></div>
+          <img src="images/prices-en-1.svg">
+          <a href="#contactt" data-scroll><img class = "reservation"　 src="images/prices-en-2.svg"></a>
+          <img src="images/prices-en-3.svg">
+        </div>
+
+        <span id = "access"></span>
+        <div id="map-wrap">
+          <div class="head"><a class="title">ACCESS</a></div>
+          <div id="mape"></div>
+          <div class = "acctime">
+            <a>DEFINITION GYM　</a><br><a>2-17-17 B1F ebisunishi shibuya Tokyo</a><br>
+            <a>5min walk from Daikanyama station/ 7min walk from Ebisu station</a><br>
+            <a>TEL:03-6455-0204　</a>
+          </div>
+        </div>
+
+        <div id="contact">
+        <form method="post" action="lib/mail.php">
+          <table class="form">
+          <span id = "contactt"></span>
+          <div class="head"><a class="title">CONTACT</a></div>
+
+        <div class="aboutRes"><a>Please contact us via the contact form if you hope to take trial sessions or have questions.<br>
+*You can also contact us via LINE</a></div>
+
+        <div class="add"><a href="https://line.me/R/ti/p/%40ska4733r"　width="100%" display="block" position ="relative"><img height="36" border="0" alt="友だち追加" src="https://scdn.line-apps.com/n/line_add_friends/btn/en.png"></a></div>
+        <div class="QR"><img border ="1px solid #000" position ="relative" width="150px" src="images/qr.PNG"></div>
+
+        <tr>
+            <th><a>Name</a></th>
+            <td><input type="text" name="お名前" size="40"></td>
+        </tr>
+        <tr>
+            <th><a>E-mail</a></th>
+            <td><input type="text" name="Email" size="40"></td>
+        </tr>
+
+        <tr>
+            <th><a>Message</a></th>
+            <td class="inp"><textarea rows="10" cols="50" name="内容"></textarea></td>
+        </tr>
+        </table>
+        <div id="mainform-submit">
+          <input type="submit" name="送信ボタン" value="Send">
+        </div>
+        </form>
+      </div>
+      </div>
+
+    </div>
+
+    <script>
+    smoothScroll.init({
+        speed: 450,
+        updateURL: false
+    }) ;
+    </script>
+    <!--GOOGLEMAP-->
+    <script>function initialize() {
+      var locations = [
+        ['Coogee Beach', 35.649169, 139.705509, 2],
+      ];
+       //var latlng = new google.maps.LatLng(35.627666, 139.724351);
+       var designcenter = new google.maps.LatLng(35.627874, 139.724371);
+       var gotandast = new google.maps.LatLng(35.626333, 139.723569);
+       var myOptions = {
+           zoom: 18,
+           center: new google.maps.LatLng(35.649169, 139.705509),
+           disableDefaultUI: true,
+           scaleControl: true,
+           mapTypeId: google.maps.MapTypeId.ROADMAP,
+           scrollwheel: false
+       };
+       var map = new google.maps.Map(document.getElementById('mape'), myOptions);
+
+       var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+
+       var marker = new google.maps.Marker({
+         position: new google.maps.LatLng(35.649169, 139.705509),
+         map: map,
+         title: 'Hello World!'
+       });
+
+
+       var geocoder = new google.maps.Geocoder();
+       var mapStyle =  [{
+         "stylers": [
+          {
+            "saturation": -100
+          }
+        ]
+        }];
+
+      var mapType = new google.maps.StyledMapType(mapStyle);
+       map.mapTypes.set('GrayScaleMap', mapType);
+       map.setMapTypeId('GrayScaleMap');
+     }
+     </script>
+
+     <!-- Root element of PhotoSwipe. Must have class pswp. -->
+  </body>
+</html>
