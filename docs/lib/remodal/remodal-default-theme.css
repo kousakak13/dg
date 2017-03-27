@@ -8,7 +8,7 @@
 
 /* Default theme styles of the overlay */
 .remodal-overlay {
-  background: rgba(255,255,255, 0);
+  background: rgba(255,255,255, 0.1);
 }
 
 .remodal-overlay.remodal-is-opening,
@@ -33,6 +33,7 @@
 
 .remodal-wrapper {
   padding: 0px 0px 0;
+  background: rgba(255,255,255,0);
 }
 
 /* Default theme styles of the modal dialog */
@@ -40,11 +41,14 @@
 .remodal {
   box-sizing: border-box;
   width: 100%;
+  height:100%;
+  max-width: 900px;
   margin-bottom: 10px;
   padding: 0px;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  background: rgba(255,255,255,0.9);
+  background: rgba(253,253,255,1);
+
 }
 
 .remodal.remodal-is-opening,
@@ -92,7 +96,7 @@
   transition: color 0.1s;
   text-decoration: none;
 
-  color: #95979c;
+  color: #000;
   border: 0;
   outline: 0;
   background: transparent;
@@ -290,7 +294,7 @@
 
 @media only screen and (min-width: 641px) {
   .remodal {
-    max-width: 900px;
+    max-width:980px;
   }
 }
 
@@ -298,7 +302,7 @@
    ========================================================================== */
 
 .lt-ie9 .remodal-overlay {
-  background: rgba(255,255,255,0.9);
+  background: #FFF;
 }
 
 .lt-ie9 .remodal {

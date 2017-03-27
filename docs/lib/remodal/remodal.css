@@ -36,11 +36,12 @@ html.remodal-is-locked {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,1);
   display: none;
   overflow: auto;
   margin:0 auto;
   text-align: center;
+  margin:10px;
 }
 
 .remodal-wrapper:after {
