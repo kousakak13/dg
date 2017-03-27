@@ -36,7 +36,7 @@ html.remodal-is-locked {
   right: 0;
   bottom: 0;
   left: 0;
-  background: #FFF;
+  background: rgba(255,255,255,0.5);
   display: none;
   overflow: auto;
   margin:0 auto;
