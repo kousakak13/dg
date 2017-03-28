@@ -506,7 +506,10 @@ p.error_messe{
 	color:red;
 }
 .closebt{
-  
+  position: relative;
+  height:10px;
+  width:10px;
+
   float:right;
 }
 
