@@ -507,8 +507,8 @@ p.error_messe{
 }
 .closebt{
   position: relative;
-  height:10px;
-  width:10px;
+  height:20px;
+  width:20px;
 
   float:right;
   z-index: 1000;
