@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9L20ol0Zti4zBsrTGCQwjwZdj1BddgHQ&callback=initialize" async defer></script>
+
+    <title>DEFINITION GYM</title>
+    <meta name="description" content="DEFINITION GYM" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content=DEFINITION GYM/>
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="DEFINITION GYM" />
+    <meta property="og:description" content="DEFINITION GYM" />
+    <meta name="robots" content="noarchive">
+
+    <!--styles-->
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/menu.css" media="screen">
+    <!--lib-->
+    <script src="lib/jquery-3.2.0.min.js"></script>
+
+    <script src="lib/smooth-scroll.min.js"></script>
+    <script type="text/javascript" src="lib/vegas.min.js"></script>
+    <link rel="stylesheet" href="lib/remodal/remodal.css">
+    <link rel="stylesheet" href="lib/remodal/remodal-default-theme.css">
+    <script src="lib/remodal/remodal.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/vegas.min.css" media="all" />
+
+    <script>
+    $(function() {
+      $('body').vegas({
+        overlay: true,
+        slides: [
+            { src: 'images/gal/0.jpg' },
+        ]
+      });
+    });
+    </script>
+    <script>
+    jQuery('head').append('<style type="text/css">#main{display:none;}</style>');
+    jQuery( function( $ ) {
+
+    var timer = 400;
+
+    $('body').append('<div id="js_fade"></div>');
+    $(window).ready(function() {
+        // ページロード時にフェードイン
+        $('#main').css({display: 'block'});
+        setTimeout( function() {
+            $('#js_fade').fadeOut(timer);
+        }, 800 );
+    });
+
+    $("a[target!='_blank']").click( function() {
+        var href = $(this).attr('href');
+        if ( href.match(/#/) || href.indexOf('javascript') == 0 ) return;
+        $('#js_fade').fadeIn( timer, function() {
+            location.href = href;
+        });
+        return false;
+      });
+    });
+    </script>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-96910339-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+  </head>
+
+  <body onload="initialize();">
+    <div id="wrapper">
+      <div id="logowrap">
+        <a href="jp.html" class ="toplogo" ><img src="./images/toplogo.svg" alt="toTop"></a>
+        <a href="jp.html" class ="toplogosm" ><img src="./images/toplogosm.svg" alt="toTop"></a>
+      </div>
+     <!-- Root element of PhotoSwipe. Must have class pswp. -->
+  </body>
+</html>

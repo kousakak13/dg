@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9L20ol0Zti4zBsrTGCQwjwZdj1BddgHQ&callback=initialize" async defer></script>
-
+    <script src="lib/jquery-3.2.0.min.js"></script>
     <title>DEFINITION GYM</title>
     <meta name="description" content="DEFINITION GYM" />
     <meta property="og:type" content="website" />
@@ -20,7 +20,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
     <link rel="stylesheet" type="text/css" href="css/menu.css" media="screen">
     <!--lib-->
-    <script src="lib/jquery-3.2.0.min.js"></script>
+
     <script src="lib/smooth-scroll.min.js"></script>
     <script type="text/javascript" src="lib/vegas.min.js"></script>
     <link rel="stylesheet" href="lib/remodal/remodal.css">
@@ -30,6 +30,7 @@
 
     <script>
     $(function(){
+
       var menu = $('#slide_menu'),
       menuBtn = $('#button'),
       bodyer = $('#wrapper'),
@@ -81,7 +82,7 @@
             { src: 'images/gal/1.jpg' },
             { src: 'images/gal/2.jpg' },
             { src: 'images/gal/3.jpg' },
-            { src: 'images/gal/4.jpg' },
+            { src: 'images/gal/4.jpg' }
         ]
       });
     });
@@ -89,7 +90,6 @@
       wsize = $(window).width();
       hsize = $(window).height();
       $("#fake").css("height", hsize + "px");
-
       if( wsize > 756){
 
       }
@@ -104,6 +104,7 @@
     });
     </script>
     <script>
+
     jQuery('head').append('<style type="text/css">#main{display:none;}</style>');
     jQuery( function( $ ) {
     var timer = 1000;
@@ -131,6 +132,15 @@
     });
     });
     </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-96910339-1', 'auto');
+  ga('send', 'pageview');
+  </script>
   </head>
 
   <body onload="initialize();">
@@ -139,17 +149,17 @@
         <ul id = "menu">
           <div id = "ht" ><li class="ss"><a href="#concept" data-scroll>CONCEPT</a></li></div>
           <div id = "ht" ><li class="ss"><a href="#trainers" data-scroll>TRAINERS</a></li></div>
-          <div id = "ht" ><li class="ss"><a href="#facilitysm" data-scroll>FACILITY</a></li></div>
+          <div id = "ht" ><li class="ss"><a href="#facility" data-scroll>FACILITY</a></li></div>
           <div id = "ht" ><li class="ss"><a href="#pricesm" data-scroll>PRICE</a></li></div>
           <div id = "ht" ><li class="ss"><a href="#access" data-scroll>ACCESS</a></li></div>
           <div id = "ht" ><li class="ss"><a href="#contactt" data-scroll>CONTACT</a></li></div>
         </ul>
         <div id = "menubtm">
           <p id = "lang">
-            <a href="jp.html">JP</a> <a>/</a> <a class="not">EN</a>
+            <a class="not">JP</a> <a>/</a> <a href="en.html">EN</a>
           </p>
           <p id = "sns">
-            <a href="https://twitter.com/" class ="icon" target="_blank"><img src="./images/twitter.svg" alt="TWITTER"></a>
+
             <a href="https://www.facebook.com/defgym/" class ="icon" target="_blank"><img src="./images/facebook.svg" alt="FACEBOOK"></a>
             <a href="https://www.instagram.com/definition_gym/" class ="icon" target="_blank"><img src="./images/instagram.svg" alt="INSTAGRAM"></a>
           </p>
@@ -162,17 +172,17 @@
         <ul id = "menu">
           <div id = "ht" ><li class="ss"><a  href="#concept" data-scroll>CONCEPT</a></li></div>
           <div id = "ht" ><li class="ss"><a  href="#trainers" data-scroll>TRAINERS</a></li></div>
-          <div id = "ht" ><li class="ss"><a  href="#facilitysm" data-scroll>FACILITY</a></li></div>
+          <div id = "ht" ><li class="ss"><a  href="#facility" data-scroll>FACILITY</a></li></div>
           <div id = "ht" ><li class="ss"><a  href="#pricesm" data-scroll>PRICE</a></li></div>
           <div id = "ht" ><li class="ss"><a  href="#access" data-scroll>ACCESS</a></li></div>
           <div id = "ht" ><li class="ss"><a  href="#contactt" data-scroll>CONTACT</a></li></div>
         </ul>
         <div id = "menubtm">
-          <a href="jp.html">JP</a> <a>/</a> <a class="not">EN</a>
+          <a class="not">JP</a> <a>/</a> <a href="en.html">EN</a>
           <p id = "sns">
-            <a href="https://twitter.com/" class ="icon" target="_blank"><img src="./images/twitter.svg" alt="TWITTER"></a>
-            <a href="https://facebook.com/" class ="icon" target="_blank"><img src="./images/facebook.svg" alt="FACEBOOK"></a>
-            <a href="https://instagram.com/" class ="icon" target="_blank"><img src="./images/instagram.svg" alt="INSTAGRAM"></a>
+
+            <a href="https://www.facebook.com/defgym/" class ="icon" target="_blank"><img src="./images/facebook.svg" alt="FACEBOOK"></a>
+            <a href="https://www.instagram.com/definition_gym/" class ="icon" target="_blank"><img src="./images/instagram.svg" alt="INSTAGRAM"></a>
           </p>
           <a href="#" class ="logo" ><img src="./images/logo2.svg" alt="INSTAGRAM"></a>
         </div>
@@ -187,48 +197,53 @@
         <div id = "welcomewrap">
         <div id = "welcome">
           <div class = "txt">
-          <a>Welcome to DEFINITION GYM</a>
+          <a>ようこそ、DEFINITION GYMへ。</a>
           <img src="images/downarrow.svg">
         </div>
         </div>
         </div>
 
-        <div id = "fake"></div>
+        <div id = "fake">
+        </div>
 
         <span id = "concept"></span>
           <div id = "concep">
+            <div class="head"><a class="title">CONCEPT</a></div>
             <div class = "txt">
             <a>
-              DEFINITION GYM is not a private gym which only targets strength improvement or weight loss.<br><br>
-              To get focused on you work,<br>
-              To make your leisure time fuller,<br>
-              To enjoy your meals more,<br>
-              DEFINITION GYM seeks to assist you in achieving the lifestyle you love by working out and<br> adjusting your life rhythm.<br>
+              DEFINITION GYMは、<br>
+              筋力アップやダイエットだけを目的にしている<br>パーソナルジムではありません。<br>
+              仕事に集中するため、<br>
+              休日を充実させるため、<br>
+              美味しいものを食べるため、<br>
+              トレーニングによって生活リズムを整え、<br>あなたらしいライフスタイルを実現する助けとなるのがDEFINITION GYMです。<br><br>
 
-              Busy working？ <br>I want you to come.<br>
-              Have no time？ <br> I want you to take action.<br>
-              We're sure you'll be able to schedule suitable and unique sessions only for you with vastly <br>experienced trainers,
-              regardless of whether you're a man or a woman, beginner or experienced.
-<br><br>
-              Start training with DEFINITION GYM to shape who you are!
-<br><br>
+              仕事が忙しい人にこそ来て欲しい。<br>
+              時間がない人にこそ来て欲しい。<br>
+              男女問わず、トレーニンング経験者から初心者まで、<br>
+              DEFINITION GYMは経験豊富なトレーナーによる<br>あなたに合った独自プログラムが受けられます。<br>
+<br>
+              あなたらしさを実現するために、<br>
+              ぜひ本物のトレーニングを体験してください。<br>
+<br>
               Better your body,better your life.<br>
-              DEFINITION GYM
+              DEFINITION GYM<br>
             </a>
+            </div>
           </div>
-          </div>
-
         <span id = "trainers"></span>
         <div id = "trainer">
           <div class="head"><a class="title">TRAINER</a></div>
           <div class ="photo1">
             <div class ="t1">
-              <img data-remodal-target="profile1" src="images/photos/tr1.jpg">
+              <img src="images/photos/tr1.jpg">
+              <!--<img data-remodal-target="profile1" src="images/photos/tr1.jpg">-->
               <a>Shun Miyatake</a>
             </div>
 
             <div class ="t2">
-              <img data-remodal-target="profile2" src="images/photos/tr2.jpg">
+              <img src="images/photos/tr2.jpg">
+              <!--<img data-remodal-target="profile2" src="images/photos/tr2.jpg">-->
               <a>Terry Kim Ho</a>
             </div>
           </div>
@@ -257,17 +272,19 @@
         <div id = "facility">
         <div class="head">  <a class="title">FACILITY</a></div>
             <img src="images/photos/fac-1.jpg">
+            <img src="images/photos/fac-4.jpg">
             <img src="images/photos/fac-2.jpg">
             <img src="images/photos/fac-3.jpg">
-            <img src="images/photos/fac-4.jpg">
+
         </div>
 
         <span id = "pricesm"></span>
         <div id = "price">
-          <div class="head"><a class="title">PRICES</a></div>
-          <img src="images/prices-en-1.svg">
-          <a href="#contactt" data-scroll><img class = "reservation"　 src="images/prices-en-2.svg"></a>
-          <img src="images/prices-en-3.svg">
+          <div class="head"><a class="title">PRICE</a></div>
+          <img src="images/prices-1.svg">
+          <a href="#contactt" data-scroll><img class = "reservation"　 src="images/prices-2.svg"></a>
+          <img src="images/prices-3.svg">
+          <img src="images/prices-4.svg">
         </div>
 
         <span id = "access"></span>
@@ -275,37 +292,36 @@
           <div class="head"><a class="title">ACCESS</a></div>
           <div id="mape"></div>
           <div class = "acctime">
-            <a>DEFINITION GYM　</a><br><a>2-17-17 B1F ebisunishi shibuya Tokyo</a><br>
-            <a>5min walk from Daikanyama station/ 7min walk from Ebisu station</a><br>
+            <a>DEFINITION GYM　</a><br><a>[東京都渋谷区恵比寿西2-17-17 B1F]</a><br>
+            <a>代官山駅より徒歩５分 / 恵比寿駅より徒歩７分</a><br>
             <a>TEL:03-6455-0204　</a>
           </div>
         </div>
 
         <div id="contact">
-        <form method="post" action="lib/mail.php">
+        <form method="post" action="lib/mail.php"><!-- action="lib/mail.php"-->
           <table class="form">
           <span id = "contactt"></span>
           <div class="head"><a class="title">CONTACT</a></div>
 
-        <div class="aboutRes"><a>Please contact us via the contact form if you hope to take trial sessions or have questions.<br>
-*You can also contact us via LINE</a></div>
+          <div class="aboutRes"><a>お問い合わせまたはトライアルをご希望の方は、コンタクトフォームよりご連絡ください。<br>※LINEでの問い合わせも受け付けております。</a></div>
 
-        <div class="add"><a href="https://line.me/R/ti/p/%40ska4733r"　width="100%" display="block" position ="relative"><img height="36" border="0" alt="友だち追加" src="https://scdn.line-apps.com/n/line_add_friends/btn/en.png"></a></div>
-        <div class="QR"><img border ="1px solid #000" position ="relative" width="150px" src="images/qr.PNG"></div>
+          <div class="add"><a href="https://line.me/R/ti/p/%40ska4733r"　width="100%"  position ="relative"><img width="150px" border="0" alt="友だち追加" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"></a></div>
+          <div class="QR"><img border ="1px solid #000" position ="relative" width="150px" src="images/qr.PNG"></div>
 
-        <tr>
-            <th><a>Name</a></th>
-            <td><input type="text" name="お名前" size="40"></td>
-        </tr>
-        <tr>
-            <th><a>E-mail</a></th>
-            <td><input type="text" name="Email" size="40"></td>
-        </tr>
+          <tr>
+              <th><a>Name</a></th>
+              <td><input type="text" name="お名前" size="40"></td>
+          </tr>
+          <tr>
+              <th><a>E-mail</a></th>
+              <td><input type="text" name="Email" size="40"></td>
+          </tr>
 
-        <tr>
-            <th><a>Message</a></th>
-            <td class="inp"><textarea rows="10" cols="50" name="内容"></textarea></td>
-        </tr>
+          <tr>
+              <th><a>Message</a></th>
+              <td class="inp"><textarea rows="10" cols="50" name="内容"></textarea></td>
+          </tr>
         </table>
         <div id="mainform-submit">
           <input type="submit" name="送信ボタン" value="Send">

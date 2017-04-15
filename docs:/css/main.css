@@ -161,8 +161,8 @@ li{list-style:none;}
 #main{
   height:100%;
   width:100%;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 #fake{
@@ -234,6 +234,7 @@ li{list-style:none;}
   left: 0;
   right: 0;
   margin:0 auto;
+
 }
 #trainer .photo1 .t1{
   position:relative;
@@ -250,12 +251,14 @@ li{list-style:none;}
 #trainer .photo1 a{
   margin-top:10px;
   text-align: left;
-  opacity: 0.0;
+  opacity: 1.0;
+  padding-top:5px;
 }
 #trainer .photo1 img{
   position: relative;
   text-align: center;
   width: 100%;
+    margin-bottom:5px;
 
 }
 #trainer .photo1 .t1:hover > a{
@@ -507,7 +510,10 @@ p.error_messe{
 	color:red;
 }
 
+
+
 @media only screen and ( max-width:1415px ){
+.totop{display: none;}
   #menuwrap{
     display:none;
   }
@@ -562,12 +568,6 @@ p.error_messe{
   #menubtm a.not{
     color:#E8E800;
   }
-
-  #sns .icon img{
-    width:20px;
-    margin-bottom:5px
-  }
-  .totop{display: none;}
   /*バーガーメニュー*/
   .menu-trigger,
   .menu-trigger span {
@@ -612,7 +612,17 @@ p.error_messe{
      -webkit-transform: translateY(-15px) rotate(45deg);
     transform: translateY(-15px) rotate(45deg);
   }
-
+}
+@media only screen and ( max-width:1015px ){
+  #main{
+    margin:0 auto;
+    max-width: 650px;
+  }
+  #sns .icon img{
+    width:20px;
+    margin-bottom:5px
+  }
+  .totop{display: none;}
   #trainer{
     margin:0 auto;
   }
